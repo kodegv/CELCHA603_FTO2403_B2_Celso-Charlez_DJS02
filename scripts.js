@@ -15,3 +15,7 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
+  //convert inputs to numbers
+  const dividendNumber = Number(dividend);
+  const dividerNumber = Number(divider);
+
