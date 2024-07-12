@@ -19,3 +19,11 @@ form.addEventListener("submit", (event) => {
   const dividendNumber = Number(dividend);
   const dividerNumber = Number(divider);
 
+  //check if unputs are valid numbers
+  if (isNaN(dividendNumber) || isNaN(dividerNumber)) {
+    console.error("Invalid input provided");
+    result.innerText = "Something critical went wrong. Please reload the page.";
+    // Optionally, you can force a page reload
+    // location.reload();
+    return;
+  }
