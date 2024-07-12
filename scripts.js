@@ -34,3 +34,8 @@ form.addEventListener("submit", (event) => {
     result.innerText = "Division not performed. Invalid number provided. Try again";
     return;
   }
+
+  // Perform the division and display the result
+  const divisionResult = Math.floor(dividendNumber / dividerNumber);
+  result.innerText = divisionResult;
+});
